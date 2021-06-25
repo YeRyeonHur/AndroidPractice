@@ -1,0 +1,51 @@
+1
+GET
+req : /?name="name"
+resp : {msg : "hello" + name}
+
+2
+POST
+req : /dataRequest
+{index : index}
+resp : {
+       		"index": index,
+                "email": email,
+                "name": name
+       }
+3
+GET
+req : getUserList
+res : {
+	"data": [
+		{
+			"index": 1,
+			"name": "김김김",
+			"tel": "000-0000-0000"
+		},
+		{
+			"index": 2,
+			"name": "이이이",
+			"tel": "111-1111-1111"
+		},
+		{
+			"index": 3,
+			"name": "박박박",
+			"tel": "222-2222-2222"
+		},
+		{
+			"index": 4,
+			"name": "나나나",
+			"tel": "333-3333-3333"
+		},
+		{
+			"index": 5,
+			"name": "최최최",
+			"tel": "444-4444-4444"
+		},
+		{
+			"index": 6,
+			"name": "강강강",
+			"tel": "555-5555-5555"
+		}
+	]
+}
