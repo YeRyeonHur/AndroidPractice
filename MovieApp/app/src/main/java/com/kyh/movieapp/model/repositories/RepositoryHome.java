@@ -36,9 +36,11 @@ public class RepositoryHome {
     }
 
     public static void addImage(String image) {
-        if(imageHistories.size() >= MAX_IMAGE_HISTORY) {
-            imageHistories = new ArrayList<>(searchHistories.subList(1, MAX_IMAGE_HISTORY-1));
+        if(!imageHistories.contains(image)) {
+            if(imageHistories.size() >= MAX_IMAGE_HISTORY) {
+                imageHistories = new ArrayList<>(searchHistories.subList(1, MAX_IMAGE_HISTORY-1));
+            }
+            imageHistories.add(image);
         }
-        imageHistories.add(image);
     }
 }

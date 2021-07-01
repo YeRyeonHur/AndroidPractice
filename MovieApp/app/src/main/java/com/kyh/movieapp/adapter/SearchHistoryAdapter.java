@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.kyh.movieapp.R;
 import com.kyh.movieapp.model.repositories.RepositoryHome;
+import com.kyh.movieapp.viewmodel.SearchViewModel;
 
 public class SearchHistoryAdapter extends RecyclerView.Adapter<SearchHistoryAdapter.ViewHolder> {
     @NonNull
@@ -41,7 +42,8 @@ public class SearchHistoryAdapter extends RecyclerView.Adapter<SearchHistoryAdap
             itemView.findViewById(R.id.itemSearchHistoryText).setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    // TODO : History 클릭 하면 검색을 바로 실행
+                    SearchViewModel.getInstance().getBinding().searchInput.setText(history);
+                    SearchViewModel.getInstance().getBinding().searchResultBtn.performClick();
                 }
             });
 
