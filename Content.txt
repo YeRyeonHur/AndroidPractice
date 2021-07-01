@@ -1,0 +1,17 @@
+통신
+- Retrofit2
+- Picasso
+- 소켓
+- JSON
+
+아키텍쳐
+- MVVM, ViewBinding, DataBinding
+- MVC, MVP
+
+안스
+- 4대 컴포넌트, 생명주기
+- Gradle
+- 반응형 레이아웃
+
+Git
+- Git Bash(CLI)

@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/movieDescriptionBaseLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/movieDescriptionImage"
+        android:layout_width="0dp"
+        android:layout_height="250dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/movieDescriptionContentsLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/movieDescriptionImage"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/movieDescriptionTitleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|left|center_vertical"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/movieDescriptionTitle"
+            app:layout_constraintTop_toTopOf="@+id/movieDescriptionTitle" />
+
+        <TextView
+            android:id="@+id/movieDescriptionTitle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="제목 : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/movieDescriptionSubtitle"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="부제목 : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/movieDescriptionTitle"
+            app:layout_constraintTop_toBottomOf="@+id/movieDescriptionTitle" />
+
+        <TextView
+            android:id="@+id/movieDescriptionPubDate"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="출시일 : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/movieDescriptionSubtitle"
+            app:layout_constraintTop_toBottomOf="@+id/movieDescriptionSubtitle" />
+
+        <TextView
+            android:id="@+id/movieDescriptionDirector"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="감독 : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/movieDescriptionPubDate"
+            app:layout_constraintTop_toBottomOf="@+id/movieDescriptionPubDate" />
+
+        <TextView
+            android:id="@+id/movieDescriptionActor"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="배우 : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/movieDescriptionDirector"
+            app:layout_constraintTop_toBottomOf="@+id/movieDescriptionDirector" />
+
+        <TextView
+            android:id="@+id/movieDescriptionUserRating"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="점수 : "
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="@+id/movieDescriptionActor"
+            app:layout_constraintTop_toBottomOf="@+id/movieDescriptionActor" />
+
+        <TextView
+            android:id="@+id/movieDescriptionSubtitleText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|left|center_vertical"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/movieDescriptionSubtitle"
+            app:layout_constraintTop_toTopOf="@+id/movieDescriptionSubtitle" />
+
+        <TextView
+            android:id="@+id/movieDescriptionPubDateText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|left|center_vertical"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/movieDescriptionPubDate"
+            app:layout_constraintTop_toTopOf="@+id/movieDescriptionPubDate" />
+
+        <TextView
+            android:id="@+id/movieDescriptionDirectorText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|left|center_vertical"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/movieDescriptionDirector"
+            app:layout_constraintTop_toTopOf="@+id/movieDescriptionDirector" />
+
+        <TextView
+            android:id="@+id/movieDescriptionActorText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|left|center_vertical"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/movieDescriptionActor"
+            app:layout_constraintTop_toTopOf="@+id/movieDescriptionActor" />
+
+        <TextView
+            android:id="@+id/movieDescriptionUserRatingText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="start|left|center_vertical"
+            android:paddingLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/movieDescriptionUserRating"
+            app:layout_constraintTop_toTopOf="@+id/movieDescriptionUserRating" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/movieDescriptionLikeBtn"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/img_heart"
+        app:tintMode="src_atop" />
+</androidx.constraintlayout.widget.ConstraintLayout>
